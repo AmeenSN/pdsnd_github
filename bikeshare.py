@@ -201,11 +201,11 @@ def user_stats(df):
 def raw_data(df):
     """Displays raw data upon user request, by printing 5 lines each loop run"""
     i = 0
-    q_text = ' '
+    question_text = ' '
     while True:
-        restart = input('\nWould you like to see{}5 lines of raw data? Enter yes or no.\n'.format(q_text))
-        q_text = ' another '
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to see{}5 lines of raw data? Enter yes or no.\n'.format(question_text))
+        question_text = ' another '
+        if restart.lower().strip() != 'yes':
             break
         print(df[i:i+5])
         i = i+5
@@ -228,7 +228,7 @@ def main():
 
 
         restart = input('\nWould you like to run another query? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if restart.lower().strip() != 'yes':
             break
 
 
