@@ -237,7 +237,7 @@ def main():
 
 
         restart = input('\nWould you like to run another query? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if restart.lower().strip() != 'yes':
             break
 
 
