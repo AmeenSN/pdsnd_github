@@ -199,7 +199,7 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-    """Displays raw data upon user request"""
+    """Displays raw data upon user request, by printing 5 lines each loop run"""
     i = 0
     q_text = ' '
     while True:
